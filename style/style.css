@@ -1,0 +1,91 @@
+p, button {
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.text, button {
+  color: white;
+}
+
+.lemon, .lemon > p, button {
+  position: relative;
+}
+
+span {
+  color: yellow;
+}
+
+body {
+  height: 100vh;
+  background-color: #39464E;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+body .container {
+  display: flex;
+  align-items: center;
+  background-image: url("./images/pexels-pixabay-416778.jpg");
+  background-size: 100% 100%;
+  height: 40%;
+  width: 80%;
+  max-width: 1400px;
+  border: 6px white solid;
+}
+body .container .lemonContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+}
+body .container .lemonContainer .lemon {
+  background-color: yellow;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  max-width: 200px;
+  width: 60%;
+  height: 50%;
+}
+body .container .text {
+  width: 50%;
+  max-width: 600px;
+  font-size: 3vw;
+  margin-left: -1%;
+}
+body .container .right-side-container {
+  height: 100%;
+  width: 30%;
+}
+body .container .right-side-container .lemon {
+  background-color: yellow;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 40%;
+  height: 28%;
+  border: black 8px solid;
+  top: 10%;
+  right: -45%;
+}
+body .container .right-side-container .lemon p {
+  display: flex;
+  align-items: center;
+  font-size: 2vw;
+  left: 8.5%;
+  top: 1%;
+}
+body .container .right-side-container button {
+  height: 25%;
+  width: 55%;
+  background-color: #E36C23;
+  border: none;
+  font-size: 2vw;
+  right: -32%;
+  bottom: -30%;
+}/*# sourceMappingURL=style.css.map */

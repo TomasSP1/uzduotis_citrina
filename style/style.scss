@@ -1,0 +1,80 @@
+@import 'variables', 'mixins';
+
+
+p, button {
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.text, button {
+    color: white;
+}
+
+.lemon, .lemon > p, button {
+    position: relative;
+}
+
+span {
+    color: $yellowColor;
+}
+
+
+body {
+    height: 100vh;
+    background-color: $backgroundColor;
+    @include flexForBOdy();
+    .container {
+        @include customFlex();
+        background-image: url('./images/pexels-pixabay-416778.jpg');
+        background-size: 100% 100%;
+        height: 40%;
+        width: 80%;
+        max-width: 1400px;
+        border: $whiteBorder;
+        .lemonContainer {
+            @include flexForBOdy();
+            height: 100%;
+            width: 30%;
+            .lemon {
+                @include customLemon();
+                max-width: 200px;
+                width: 60%; 
+                height: 50%; 
+            }
+        }
+        .text {
+            width: 50%;
+            max-width: 600px;
+            font-size: 3vw;
+            margin-left: -1%;
+        }
+        .right-side-container {
+            height: 100%;
+            width: 30%;
+            .lemon {
+                @include customLemon();
+                width: 40%;
+                height: 28%;
+                border: black 8px solid;
+                top: 10%;
+                right: -45%;
+                p {
+                    @include customFlex(); 
+                    font-size: 2vw;
+                    left: 8.5%;
+                    top: 1%;
+                }
+            }
+            button {
+                height: 25%;
+                width: 55%;
+                background-color: #E36C23;
+                border: none;
+                font-size: 2vw;
+                right: -32%;
+                bottom: -30%;
+            }
+        }
+    }
+}
+

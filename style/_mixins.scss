@@ -1,0 +1,19 @@
+@mixin flexForBOdy() {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@mixin customFlex() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin customLemon() {
+    background-color: yellow;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
